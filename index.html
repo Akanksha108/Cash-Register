@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Cash Register Manager</h1>
-    <p>Enter the bill amount and cash given by customer and know the minimum number of notes to return.</p>
+    <div class="header">
+        <h1>Cash Register Manager</h1>
+        <p class="header_para">Enter the bill amount and cash given by customer and know the minimum number of notes to return.</p>
+    </div>
+    
     <form class="cash">
-        <label for="bill_amount">Bill Amount</label>
+        <label for="bill_amount" class="cash_amount">Bill Amount:</label>
         <input type="text" id="bill_amount" name="bill_amount" placeholder="Enter the bill amount" /><br>
 
-        <label for="cash_amount">Bill Amount</label>
-        <input type="text" id="cash_amount" name="cash_amount" />
+        <label for="cash_to_be_given" class="cash_amount">Cash Given:</label>
+        <input type="text" id="cash_to_be_given" name="cash_to_be_given" />
     </form>
     
     
