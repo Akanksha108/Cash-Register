@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+:root{
+    --primary-color: #F9A8D4;
+}
+
 body{
     background-color: #BE185D;
     color: aliceblue;
@@ -24,7 +28,7 @@ body{
 .cash{
     padding: 15px;
     margin: 15px;
-    color: #F9A8D4;
+    color: var(--primary-color);
 }
 
 .cash_amount{
@@ -39,3 +43,25 @@ input{
     width: 50%;
     height: 10vh;
 }
+
+#next_btn{
+    padding: 20px;
+    margin: 15px;
+    width: 84px;
+    height: 39px;
+    background-color: var(--primary-color);
+    border: orchid;
+}
+
+/* .hide_cash_given{
+    display: none;
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+#cash_to_be_given{
+    display: none;
+} */
