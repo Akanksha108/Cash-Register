@@ -44,24 +44,16 @@ input{
     height: 10vh;
 }
 
-#next_btn{
-    padding: 20px;
-    margin: 15px;
+#submit_btn{
+    display: block;
+    margin: auto;
+    padding: 15px 20px 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 84px;
     height: 39px;
     background-color: var(--primary-color);
     border: orchid;
+    text-align: center;
+    cursor: pointer;
 }
-
-/* .hide_cash_given{
-    display: none;
-    display: block;
-    padding: 15px;
-    margin: 10px;
-    margin-bottom: 0;
-    font-size: 23px;
-}
-
-#cash_to_be_given{
-    display: none;
-} */
