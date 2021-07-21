@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #BE185D;
+    color: aliceblue;
+    text-align: center;
+}
+
+.header{
+   
+    padding: 20px;
+    margin: 30px;
+}
+
+.header_para{
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.cash{
+    padding: 15px;
+    margin: 15px;
+    color: #F9A8D4;
+}
+
+.cash_amount{
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+input{
+    width: 50%;
+    height: 10vh;
+}
