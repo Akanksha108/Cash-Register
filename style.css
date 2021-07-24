@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
 }
 
 :root{
@@ -58,11 +57,12 @@ input{
     cursor: pointer;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 70%;
-    margin: auto;
+table{
+    display: none;
+}
+
+.table {
+  display: none;
   }
 
   td, th {
