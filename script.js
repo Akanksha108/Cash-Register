@@ -7,13 +7,23 @@ let submit_button = document.getElementById("submit_btn");
 
 let output_demo = document.getElementById("demo");
 
+let table = document.querySelector("#table");
+
 
 function calculate(event){
  
     event.preventDefault();
 
+    // if(table.style.display == 'none'){
+    //     table.style.display = 'block';
+    //     table.style.width = '70%';
+    //     table.style.margin = "auto";
+    //     table.style.borderCollapse = 'collapse';
+    // }
+
+
     let cashToBeGiven = bill_amount.value - cash_given.value;
-    console.log(cashToBeGiven);
+    //console.log(cashToBeGiven);
 
     let notes = [2000, 500, 100, 20, 10, 5, 1];
     let currencyCount = Array(7).fill(0);
@@ -25,10 +35,19 @@ function calculate(event){
         }
     }
 
-   document.getElementById("currency_heading").innerHTML = ("Number of notes to return: " + "<br />");
+    if(table.style.display == 'block'){
+            table.style.display = 'none';
+        }else{
+            table.style.display = 'block';
+            table.style.margin = "auto";
+            table.style.width = '100%';
+            table.style.borderCollapse = 'collapse';
+        }
+
+
     for(let i = 0; i < 7; i++){
         if(currencyCount[i] != 0){
-            output_demo.innerHTML += notes[i] + " : " + currencyCount[i] + "<br />";
+            // output_demo.innerHTML += notes[i] + " : " + currencyCount[i] + "<br />";
 
             if(notes[i] == 1){
                 document.getElementById("demo1").innerHTML += currencyCount[i] + "<br />";
