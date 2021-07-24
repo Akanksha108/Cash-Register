@@ -39,8 +39,9 @@ function calculate(event){
             table.style.display = 'none';
         }else{
             table.style.display = 'block';
-            table.style.margin = "auto";
-            table.style.width = '100%';
+            table.style.marginLeft = "auto";
+            table.style.marginRight = "auto";
+            table.style.width = '340px';
             table.style.borderCollapse = 'collapse';
         }
 
