@@ -14,14 +14,6 @@ function calculate(event){
  
     event.preventDefault();
 
-    // if(table.style.display == 'none'){
-    //     table.style.display = 'block';
-    //     table.style.width = '70%';
-    //     table.style.margin = "auto";
-    //     table.style.borderCollapse = 'collapse';
-    // }
-
-
     let cashToBeGiven = bill_amount.value - cash_given.value;
     //console.log(cashToBeGiven);
 
