@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #BE185D;
+    background: linear-gradient(to right, #ad5389, #3c1053);
     color: aliceblue;
     text-align: center;
 }
@@ -24,9 +24,26 @@ body{
     margin-top: 25px;
 }
 
+.main{
+    display: flex;
+}
+
+.main_img{
+    width: 30%;
+}
+
+#donald_img{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.main_form{
+    width: 70%;
+}
+
 .cash{
-    padding: 15px;
-    margin: 15px;
+    padding: 0 15px 15px 15px;
+    margin: 0 15px 15px 15px;
     color: var(--primary-color);
 }
 
@@ -69,5 +86,19 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+}
+
+@media screen and (max-width:360px) {
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .main_img{
+        width: 100%;
+    }
+
+    .main_form{
+        width: 100%;
+    }
 }
 
