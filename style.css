@@ -28,17 +28,9 @@ body{
     display: flex;
 }
 
-.main_img{
-    width: 30%;
-}
-
 #donald_img{
     padding-top: 20px;
     margin-top: 20px;
-}
-
-.main_form{
-    width: 70%;
 }
 
 .cash{
@@ -78,17 +70,13 @@ table{
     display: none;
 }
 
-.table {
-  display: none;
-  }
-
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (min-width:360px) {
     .main{
         flex-wrap: wrap;
     }
@@ -99,6 +87,17 @@ td, th {
 
     .main_form{
         width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .main_img{
+        width: 30%;
+    }
+
+    .main_form{
+        width: 70%;
     }
 }
 
