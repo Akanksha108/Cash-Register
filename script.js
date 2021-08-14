@@ -14,11 +14,11 @@ function calculate(event){
  
     event.preventDefault();
 
-    let cashToBeGiven = bill_amount.value - cash_given.value;
+    let cashToBeGiven = cash_given.value - bill_amount.value;
     //console.log(cashToBeGiven);
 
     let notes = [2000, 500, 100, 20, 10, 5, 1];
-    let currencyCount = Array(7).fill(0);
+    let currencyCount = Array(7).fill(0);  //will return an array of 0's
 
     for(let i = 0; i < 7; i++){
         if(cashToBeGiven  >= notes[i]){
@@ -43,25 +43,25 @@ function calculate(event){
             // output_demo.innerHTML += notes[i] + " : " + currencyCount[i] + "<br />";
 
             if(notes[i] == 1){
-                document.getElementById("demo1").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo1").innerHTML = currencyCount[i];
             }
             else if(notes[i] === 5){
-                document.querySelector("#demo2").innerHTML += currencyCount[i] + "<br />";
+                document.querySelector("#demo2").innerHTML = currencyCount[i];
             }
             else if(notes[i] == 10){
-                document.getElementById("demo3").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo3").innerHTML = currencyCount[i];
             }
             else if(notes[i] == 20){
-                document.getElementById("demo4").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo4").innerHTML = currencyCount[i];
             }
             else if(notes[i] == 100){
-                document.getElementById("demo5").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo5").innerHTML = currencyCount[i];
             }
             else if(notes[i] == 500){
-                document.getElementById("demo6").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo6").innerHTML = currencyCount[i];
             }
             else if(notes[i] == 2000){
-                document.getElementById("demo7").innerHTML += currencyCount[i] + "<br />";
+                document.getElementById("demo7").innerHTML = currencyCount[i];
             }
             else{
                 console.log("Please enter correct input");
