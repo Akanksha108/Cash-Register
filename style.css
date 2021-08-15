@@ -76,6 +76,10 @@ td, th {
     padding: 8px;
 }
 
+#error{
+    font-size: 1.3rem;
+}
+
 .footer{
     width: 100%;
     background-color: #D1D5DB;
