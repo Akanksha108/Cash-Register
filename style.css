@@ -76,6 +76,25 @@ td, th {
     padding: 8px;
 }
 
+.footer{
+    width: 100%;
+    background-color: #D1D5DB;
+}
+
+.footer_list{
+    list-style-type: none;
+}
+
+.footer_list li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+}
+
+.footer_img{
+    width: 25px;
+}
+
 @media screen and (min-width:360px) {
     .main{
         flex-wrap: wrap;
