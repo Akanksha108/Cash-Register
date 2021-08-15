@@ -72,7 +72,7 @@ function calculate(event){
         }
     }
     else{
-        displayError.innerHTML = "Bill amount should be less than or equal to cash given."
+        displayError.innerHTML = "Cash given should be greater than or equal to bill amount."
     }
 
 };
