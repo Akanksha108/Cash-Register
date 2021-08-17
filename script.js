@@ -17,7 +17,7 @@ function calculate(event){
     const cashGivenValue = parseInt(cash_given.value);
     const billAmountValue = parseInt(bill_amount.value);
 
-    if(cashGivenValue >= billAmountValue){
+    if(billAmountValue > 0 && cashGivenValue >= billAmountValue){
         let cashToBeGiven = cashGivenValue - billAmountValue;
 
         let notes = [2000, 500, 100, 20, 10, 5, 1];
